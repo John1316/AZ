@@ -605,4 +605,15 @@ select.form-control {
 form .card-body {
   padding: 3px;
 }
+
+.pagination .page-item.active .page-link {
+  background-color: #302e97;
+  color: #fff;
+  border: 1px solid #302e97;
+}
+
+.pagination .page-item .page-link {
+  color: #302e97;
+  border: 1px solid #302e97;
+}
 /*# sourceMappingURL=custom.css.map */

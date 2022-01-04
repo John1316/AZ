@@ -643,3 +643,20 @@ form{
         padding: 3px;
     }
 }
+// pagination
+.pagination {
+    .page-item{
+        &.active{
+            .page-link{
+                background-color: $mainColor;
+                color: #fff;
+                border:1px solid $mainColor;
+            }
+        }
+        .page-link{
+            color: $mainColor;
+            border:1px solid $mainColor;
+
+        }
+    }
+}
