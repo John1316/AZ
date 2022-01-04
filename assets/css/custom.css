@@ -50,19 +50,56 @@
   padding: 25px 30px;
 }
 
-.accordion-header button.accordion-button {
-  background-color: #fff;
-  color: #302e97;
-}
-
-.accordion-header button.accordion-button.collapsed {
-  background-color: #302e97;
-  color: #fff;
-}
-
 /* section{
     padding: 40px 0;
 } */
+.faq-client-say-area #faq .card {
+  margin-bottom: 30px;
+  border: 0;
+}
+
+.faq-client-say-area #faq .card .card-header {
+  border: 0;
+  -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+  box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+  border-radius: 2px;
+  padding: 0;
+}
+
+.faq-client-say-area #faq .card .card-header .btn-header-link {
+  color: #fff;
+  display: block;
+  text-align: left;
+  background: #302e97;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+.faq-client-say-area #faq .card .card-header .btn-header-link:after {
+  content: "\f0d7";
+  font-family: 'FontAwesome';
+  font-weight: 900;
+  float: right;
+}
+
+.faq-client-say-area #faq .card .card-header .btn-header-link.collapsed {
+  background: #ccc;
+  color: #000;
+}
+
+.faq-client-say-area #faq .card .card-header .btn-header-link.collapsed:after {
+  content: "\f106";
+}
+
+.faq-client-say-area #faq .card .card-body {
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.faq-client-say-area #faq .card .collapse {
+  border: 0;
+}
+
 .banner_area .banner_thumb img {
   height: 200px;
   /* object-fit: cover; */
