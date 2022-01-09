@@ -106,7 +106,7 @@ $mainColor: #302e97;
 }
 
  #faq .card .card-header .btn-header-link:after {
-    content: "\f0d7";
+    content: "\f106";
     font-family: 'FontAwesome';
     font-weight: 900;
     float: right;
@@ -118,7 +118,7 @@ $mainColor: #302e97;
 }
 
  #faq .card .card-header .btn-header-link.collapsed:after {
-  content: "\f106";
+  content: "\f0d7";
 }
 
  #faq .card .card-body{
@@ -505,6 +505,11 @@ aside.sidebar_widget{
     background-color: #f8f8f8;
     padding: 15px;
 }
+#registerForm{
+    button{
+        border-radius: 0;
+    }
+}
 #registerForm input::-webkit-outer-spin-button,
 #registerForm input::-webkit-inner-spin-button,
 #contactForm input::-webkit-outer-spin-button,
@@ -515,7 +520,24 @@ aside.sidebar_widget{
 -webkit-appearance: none;
 margin: 0;
 }
-
+.contact{
+    &_message{
+        &.form{
+            background-color: #f8f8f8;
+            padding: 30px;
+        }
+        &.content{
+            background-color: #f8f8f8;
+            padding: 30px;
+        }
+        button{
+            border-radius: 0;
+            &:hover{
+                color: #fff !important;
+            }
+        }
+    }
+}
 /* Firefox */
 #registerForm input[type=number],
 #contactForm input[type=number],
@@ -527,7 +549,7 @@ margin: 0;
     padding: 40px 0;
 }
 select.form-control{
-    border: 1px solid #ccc;
+    border: 1px solid #ededed !important;
     height: 40px;
     border: 0;
     max-width: 100%;
@@ -546,6 +568,13 @@ select.form-control{
         margin-right: 12px;
     }
 }
+.track-order{
+    li{
+        @media screen and (max-width:450px) {
+            margin-bottom: 10px;
+        }
+    }
+}
 .tracks{
     .track-status{
         font-weight: 500;
@@ -556,12 +585,12 @@ select.form-control{
         -webkit-box-shadow: 0 15px 55px 0 rgba(42, 46, 52, .1);
         -moz-box-shadow: 0 15px 55px 0 rgba(42, 46, 52, .1);
         box-shadow: 0 15px 55px 0 rgba(42, 46, 52, .1);
-        padding: 20px 25px;
+        padding: 40px 25px;
         margin-bottom: 20px;
     }
     .track-area{
         .track-main {
-            margin-top: 30px;
+            margin-top: 20px;
             padding-top: 8px;
             border-top: 1px solid #eee;
             .track {
@@ -628,12 +657,51 @@ select.form-control{
     
     } 
 }
+#saveAddress{
 
+    .form-check{
+        border: none;
+        -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+        box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+        .form-check-label{
+            h5{
+                margin-left: 10px;
+            }
+            span{
+                margin-left: 10px;
+            }
+            
+        }
+    }
+}
+.checkout_form{
+    .items{
+        .card{
+            -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            border: none;
+        }
+    }
+}
+.checkout-table{
+    h5{
+        margin-bottom: 0;
+    }
+}
 // forms
 
 .form-control{
     border-radius: 0;
-    border: #ccc 1px solid;
+    border:1px solid #ededed  ;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+}
+.account_form {
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    form{
+        border: 0;
+    }
 }
 .form-group{
     margin-bottom: 20px;

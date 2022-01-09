@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>AZ | Checkout</title>
+    <title>AZ | Shopping cart</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -397,233 +397,42 @@
     </header>
     <!--header area end-->
 
+
+    
     <!--breadcrumbs area start-->
     <div class="breadcrumbs_area">
-        <div class="container">
+        <div class="container">   
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb_content">
-                        <h3>Checkout</h3>
+                       <h3>Shopping cart</h3>
                         <ul>
                             <li><a href="index.html">home</a></li>
-                            <li>Checkout</li>
+                            <li>Shopping Cart</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>         
     </div>
     <!--breadcrumbs area end-->
     
-    <!--Checkout page section-->
-    <section class="checkout_section section-tb-padding">
-        <div class="container">
-
-            <div class="checkout_form">
+     <!--shopping cart area start -->
+    <div class="shopping_cart_area section-tb-padding">
+        <div class="container">  
+            <form action="#"> 
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <i class="fa fa-cart-plus fa-2x" aria-hidden="true"></i>
+                        <h4>Your cart is empty now</h4>
+                        
+                     </div>
+                 </div>
                 
-                <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-6">
-                        <form action="#">
-                            <div class="row">
-
-                                
-
-                                <div class="col-md-6">
-
-                                    <div class="delivery-address">
-                                        <h3 class="mb-0 mt-2 ">Delivery Address</h3>
-                                        <div class="form-group">
-                                            <input type="text" placeholder="El Sheikh Zayed, Al-Ahram Gardens Gate 3, 8 phores buildings batran districy el libiny street" class="form-control" disabled="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-
-                                    <div class="delivery-time ">
-                                        <h3 class="mb-0 mt-2">Delivery Time</h3>
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Delivery within 45 to 90 minutes" class="form-control" disabled="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="delivery-method ">
-                                        <h3 class="mb-0 mt-2">Delivery method</h3>
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Pickup" class="form-control" disabled="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group calc-shipping" style="width: 100% !important;">
-                                        <h3 class="mb-0 mt-2">comment</h3>
-                                        <input type="text" name="comment" id="comment" placeholder="Enter Your Comment">
-                                </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="calc-shipping ">
-                                        <h3 class="mb-0 mt-2 bg-primary text-white p-2">Payment Method</h3>
-                                        <div class="calc-shipping-body">
-
-                                            <div class="form-check">
-                                                <input class="form-check-input mr-1" type="radio" name="payement_method" id="cash" value="cash" required="">
-                                                <label class="form-check-label" for="cash">
-                                                    Cash
-                                                </label>
-                                            </div>
-                                            <div class="form-check mb-1">
-                                                <input class="form-check-input mr-1" type="radio" name="payement_method" id="credit_card_on_delivery" value="Credit Card on Delivery" required="">
-                                                <label class="form-check-label" for="credit_card_on_delivery">
-                                                    Credit Card on Delivery
-                                                </label>
-                                            </div>
-                                            <div class="form-check mb-1">
-                                                <input class="form-check-input mr-1" type="radio" name="payement_method" id="exampleRadios2" value="Credit Card (Coming Soon)" disabled="">
-                                                <label class="form-check-label" for="Credit Card (Coming Soon)">
-                                                    Credit Card (Coming Soon)
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                
-                                
-                                
-                            </div>
-                            
-                                
-                        </form>    
-                    </div>
-                    <div class="col-lg-4 col-md-6 " >
-                        <form action="#" class=""> 
-
-                            <div class="checkout-table  row no-gutter">
-                                <h3>Your order</h3> 
-                                <div class="col-12 p-3 bg-gray">
-                                    <div class="checkout-cart-subtotal">
-                                        <div class="row no-gutter align-items-center">
-
-                                            <div class="col-lg-6 text-center">
-                                                <h5>Cart Subtotal</h5>
-                                            </div>
-                                            <div class="col-lg-6 text-center">
-                                                <p>160 Egp</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="checkout-cart-shipping">
-                                        <div class="row no-gutter align-items-center">
-
-                                            <div class="col-lg-6 text-center">
-                                                <h5>Shipping</h5>
-                                            </div>
-                                            <div class="col-lg-6 text-center">
-                                                <p>15 Egp</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="checkout-cart-discount">
-                                        <div class="row no-gutter align-items-center">
-
-                                            <div class="col-lg-6 text-center">
-                                                <h5>Discount</h5>
-                                            </div>
-                                            <div class="col-lg-6 text-center">
-                                                <p>+20%</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="checkout-cart-total">
-                                        <div class="row no-gutter align-items-center">
-
-                                            <div class="col-lg-6 text-center">
-                                                <h5>Order Total</h5>
-                                            </div>
-                                            <div class="col-lg-6 text-center">
-                                                <p>150 LE</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="thankyou-checkout.html" class="btn btn-success text-white mt-3 w-100">Checkout</a>
-                                </div>
-                                
-                            </div>
-                        </form>         
-                    </div>
-                </div> 
-                <div class="items">
-                    <h3 class="mb-0 mt-2 ">Items</h3>
-
-                    <div class="row no-gutter">
-                        <div class="col-md-4 item">
-                            <div class="card ">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-2">
-
-                                            <img src="assets/img/product/product1.jpg" alt="">
-                                        </div>
-                                        <div class="col-md-5">
-                                            <h4>Cabotchaa</h4>
-                                            <p>Vegtable</p>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <h4>X 5</h4>
-                                            <p>25 LE</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 item">
-                            <div class="card ">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-2">
-
-                                            <img src="assets/img/product/product2.jpg" alt="">
-                                        </div>
-                                        <div class="col-md-5">
-                                            <h4>Cabotchaa</h4>
-                                            <p>Vegtable</p>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <h4>X 5</h4>
-                                            <p>25 LE</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 item">
-                            <div class="card ">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-2">
-
-                                            <img src="assets/img/product/product2.jpg" alt="">
-                                        </div>
-                                        <div class="col-md-5">
-                                            <h4>Cabotchaa</h4>
-                                            <p>Vegtable</p>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <h4>X 5</h4>
-                                            <p>25 LE</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div> 
-        </div>       
-    </section>
-    <!--Checkout page section end-->
+            </form> 
+        </div>     
+    </div>
+     <!--shopping cart area end -->
     
     <!--footer area start-->
     <footer class="footer_widgets">
@@ -684,8 +493,7 @@
         </div>   
     </footer>
     <!--footer area end-->
-    
-    
+
 <!-- JS
 ============================================ -->
 <!--jquery min js-->
@@ -724,9 +532,8 @@
 
 
 
-
 </body>
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/safira/safira/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Aug 2021 20:44:57 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/safira/safira/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Aug 2021 20:44:56 GMT -->
 </html>

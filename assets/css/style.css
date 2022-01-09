@@ -461,13 +461,13 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   top: 0;
   height: 100vh;
   transition: .5s;
-  left: 0;
-  margin-left: -300px;
+  right: 0;
+  margin-right: -300px;
   padding: 50px 15px 30px;
   overflow-y: auto;
 }
 .offcanvas_menu_wrapper.active {
-  margin-left: 0;
+  margin-right: 0;
 }
 .offcanvas_menu_wrapper .slinky-theme-default {
   background: inherit;
@@ -6112,7 +6112,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 /* shop page css here*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
   .shop_reverse .row {
     flex-direction: column-reverse;
   }
@@ -6121,7 +6121,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .shop_reverse .row {
     flex-direction: column-reverse;
   }
-}
+} */
 
 .row.shop_wrapper {
   flex-direction: row;
