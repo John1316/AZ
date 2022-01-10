@@ -424,7 +424,7 @@
 
                 
                 <div class="profile__body">
-                    <div class="row align-items-stretch">
+                    <div class="row align-items-stretch no-gutters">
                         
                         <div class="col-lg-3">
                             <div class="card border-right-2 h-100">
@@ -446,13 +446,7 @@
                                             <h6 class="mb-0">Phone Number</h6>
                                             <p class="font-weight-bold mb-0">011111111111</p>
                                         </div>
-                                        <!-- <div class="col-12">
-                                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                                                <a class="nav-link " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Change password</a>
-                                                
-                                            </div>
-                                        </div> -->
+                                        
                                     </div>
 
                                 </div>
@@ -593,21 +587,47 @@
                                    
                                 </div>
                             </div>
-                            <!-- <div class="row">
-                                <div class="product_d_inner">   
-                                    <div class="product_info_button">    
-                                        <ul class="nav" role="tablist" id="nav-tab">
-                                            <li >
-                                                <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Current order</a>
-                                            </li>
-                                            <li>
-                                                 <a data-toggle="tab" href="#sheet" role="tab" aria-controls="sheet" aria-selected="false">Past order</a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="info" role="tabpanel" >
+                            
+ 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> 
+    <!--//section-->
+    <section class="profileSection profile">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-9">
+                    <div class="card p-3 py-4">
+                        <div class="text-center"> <img src="https://www.digitalbondmena.com/egec_new_new/backend/app-assets/images/profile/portraits/avatar-portrait-1.jpg" width="100" class="rounded-circle profile_img"> </div>
+                        <div class="text-center mt-3">
+                            <div class="mb-3">
+
+                                <h5 class="mt-2 mb-0">Alexender Schidmt</h5> 
+                                <span>mohamed@yahoo.com</span>
+                                <div class="px-4 mt-1">
+                                    <p class="fonts">011111111</p>
+                                </div>
+                            </div> 
+                            <ul class="nav nav-pills row " role="tablist" id="nav-tab">
+                                <li  class="nav-item col-md-4 text-center">
+                                    <a class="active nav-link" data-toggle="tab" href="#pills-profile" role="tab" aria-controls="info" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item col-md-4 text-center">
+                                    <a class="nav-link" data-toggle="tab" href="#pills-password" role="tab" aria-controls="sheet" aria-selected="false">Password</a>
+                                </li>
+                                <li class="nav-item col-md-4 text-center">
+                                    <a class="nav-link" data-toggle="tab" href="#pills-address" role="tab" aria-controls="sheet" aria-selected="false">Past addresses</a>
+                                </li>
+                                
+                            </ul>
+                            <div class="card-body">
+                                <div class="row no-gutters">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                             <form action="">
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -631,107 +651,103 @@
                                                     </div>
                                                     
                                                     <div class="col-12">
-                                                        <button type="submit" class="btn btn-primary">Update profile</button>
+                                                        <button type="submit" class="btn btn-primary mt-2">Update profile</button>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="tab-pane fade" id="sheet" role="tabpanel" >
-                                            <div class="row no-gutters my-3">
-                                                <div class="col-12">
-                                                    <div class="card shadow-5 bg-primary">
-                                                        <div class="card-body">
-                                                            <div class="d-flex no-gutters justify-content-between ">
-                                                                <p class="mb-0">Date: Jan 03 2021</p>
-                                                                <p class="mb-0">Time: 14:13:07</p>
-                                                                <p class="mb-0">ID:  #10</p>
-                                                            </div>
+                                        <div class="tab-pane fade " id="pills-password" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <form action="">
+                                                <div class="row">
+                                                    
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="old_password">Old Password</label>
+                                                            <input id="old_password" class="form-control" type="text"
+                                                                name="old_password" required>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="card shadow-5">
-                                                        <div class="card-body">
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title">Subtotal: </h5>
-                                                                <p class="card-text">405 EGP</p>
-                                                            </div>
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title">Delivery Fees: </h5>
-                                                                <p class="card-text">405 EGP</p>
-                                                            </div>
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title">VAT:</h5>
-                                                                <p class="card-text">14%</p>
-                                                            </div>
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title text-success">DISCOUNT ON OFFER:</h5>
-                                                                <p class="card-text text-success">-15 %</p>
-                                                            </div>
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title text-danger">Total:</h5>
-                                                                <p class="card-text text-danger">403.845 EGP</p>
-                                                            </div>
-                                                            
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="password">Password</label>
+                                                            <input id="password" class="form-control" type="text"
+                                                                name="password" required>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="row no-gutters my-3">
-                                                <div class="col-12">
-                                                    <div class="card shadow-5 bg-primary">
-                                                        <div class="card-body">
-                                                            <div class="d-flex no-gutters justify-content-between ">
-                                                                <p class="mb-0">Date: Jan 04 2022</p>
-                                                                <p class="mb-0">Time: 14:13:07</p>
-                                                                <p class="mb-0">ID:  #5</p>
-                                                            </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="c_password">Confirm Password</label>
+                                                            <input id="c_password" class="form-control" type="text"
+                                                                name="c_password" required>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="card shadow-5">
-                                                        <div class="card-body">
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title">Subtotal: </h5>
-                                                                <p class="card-text">405 EGP</p>
-                                                            </div>
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title">Delivery Fees: </h5>
-                                                                <p class="card-text">405 EGP</p>
-                                                            </div>
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title">VAT:</h5>
-                                                                <p class="card-text">14%</p>
-                                                            </div>
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title text-success">DISCOUNT ON OFFER:</h5>
-                                                                <p class="card-text text-success">-15 %</p>
-                                                            </div>
-                                                            <div class="d-flex no-gutters justify-content-between">
-                                                                <h5 class="card-title text-danger">Total:</h5>
-                                                                <p class="card-text text-danger">450 EGP</p>
-                                                            </div>
-                                                            
-                                                        </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary mt-2">Change Password</button>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </form>
                                         </div>
-            
+                                        <div class="tab-pane fade " id="pills-address" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <form action="">
+                                                <div class="row no-gutter my-3">
+                                                    <div class="col-12">
+                                                        <div class="card card-header-profile shadow-5 bg-primary">
+                                                            <div class="card-body">
+                                                                <div class="d-flex no-gutters justify-content-between ">
+                                                                    <p class="mb-0">Your Addresses</p>
+                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="card shadow-5">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="location">Location</label>
+                                                                            <select id="location" class="form-control" type="text" name="location" readonly="">
+                                                                                <option value="">Cairo</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="address">Address</label>
+                                                                            <input id="address" class="form-control" type="text" value="address new" name="address" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row justify-content-between mt-2">
+                                                                    <div class="col-md-3">
+                
+                                                                        <button data-bs-toggle="modal" data-bs-target="#address_area13" class="btn btn-primary w-100">Update Address</button>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <form method="POST" action="">                                                        
+                                                                        <button class="btn btn-primary w-100" type="submit">Remove Address</button>
+                                                                        </form>
+                                                                    </div>
+                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                         
                                     </div>
-                                </div>   
-                            </div> -->
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    <!--//section-->
-
+    </section>
 
 
     <!--footer area start-->

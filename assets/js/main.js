@@ -398,10 +398,10 @@
         $('.gallery_carousel').owlCarousel({
             loop: true,
             nav: false,
-            autoplay: false,
-            autoplayTimeout: 8000,
+            autoplay: true,
+            autoplayTimeout: 4000,
             items: 3,
-            dots:false,
+            dots:true,
             margin:30,
             responsiveClass:true,
             responsive:{
