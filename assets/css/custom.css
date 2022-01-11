@@ -1,4 +1,8 @@
 /* home page */
+.was-validated:invalid .invalid-feedback {
+  display: block;
+}
+
 .bg-primary {
   background-color: #302e97 !important;
   color: #fff;

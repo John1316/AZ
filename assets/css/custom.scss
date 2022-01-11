@@ -1,6 +1,8 @@
 /* home page */
 $mainColor: #302e97;
-
+.was-validated:invalid .invalid-feedback{
+    display: block;
+}
 .bg-primary {
     background-color: $mainColor !important;
     color: #fff;
