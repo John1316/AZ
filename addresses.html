@@ -395,7 +395,7 @@
                                         <div class="form-group form-control-validation">
     
                                             <label for="no_of_building">Number of building</label>
-                                            <input type="number" placeholder="Number of building" class="form-control"
+                                            <input onkeypress="isInputNumber(event)" type="number" placeholder="Number of building" class="form-control"
                                                 id="villa_no_of_building">
                                             <small>Error message</small>
                                         </div>
@@ -424,7 +424,7 @@
                                         <div class="form-group form-control-validation">
     
                                             <label for="no_of_building">Number of building</label>
-                                            <input type="number" placeholder="Number of building" class="form-control"
+                                            <input onkeypress="isInputNumber(event)" type="number" placeholder="Number of building" class="form-control"
                                                 id="building_no_of_building">
                                             <small>Error message</small>
     
@@ -434,7 +434,7 @@
                                         <div class="form-group form-control-validation">
     
                                             <label for="no_of_apartment">Number of apartment</label>
-                                            <input type="number" placeholder="Number of apartment" class="form-control"
+                                            <input type="number" onkeypress="isInputNumber(event)" placeholder="Number of apartment" class="form-control"
                                                 id="building_no_of_apartment">
                                             <small>Error message</small>
     
@@ -513,7 +513,7 @@
                                     <div class="form-group form-control-validation">
     
                                         <label for="mobilepickup">Mobile</label>
-                                        <input type="number" name="mobilepickup" id="mobilepickup" class=" form-control"
+                                        <input onkeypress="isInputNumber(event)" type="number" name="mobilepickup" id="mobilepickup" class=" form-control"
                                             placeholder="Mobile">
                                         <small></small>
                                     </div>
@@ -530,8 +530,8 @@
                                 <div class="col-md-6">
                                     <div class="form-group form-control-validation">
     
-                                        <label for="pickuptime">Pick up time after</label>
-                                        <select class="select_option form-control" name="pickuptime" id="pickuptime">
+                                        <label for="pickuptime" class="w-100">Pick up time after</label>
+                                        <select class="form-control" name="pickuptime" id="pickuptime">
                                             <option value="">Choose Time</option>
                                             <option value="30">30 Minutes</option>
                                             <option value="60">60 Minutes</option>
@@ -665,6 +665,12 @@
     <script src="assets/js/main.js"></script>
 
     <script>
+        function isInputNumber(event) {
+        var char = String.fromCharCode(event.which);
+        if(!(/[0-9]/.test(char))){
+            event.preventDefault();
+        }
+    }
     function RedirectaddAddress() {
         $("#prevAddress").addClass("d-none");
         $("#addAddress").removeClass("d-none");

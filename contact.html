@@ -305,37 +305,37 @@
                 <div class="col-lg-8 col-md-6">
                    <div class="contact_message form">
                         <h3>Tell us your project</h3>   
-                        <form id="contactForm" method="POST" >
+                        <form id="contactForm" novalidate class="needs-validation" method="POST" >
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p>  
+                                    <div class="form-group">  
                                         <label> Your Name (required)</label>
-                                        <input name="name" placeholder="Name *" type="text" required="please"> 
-                                    </p>
+                                        <input name="name" placeholder="Name *" class="form-control" type="text" required> 
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <p>       
                                         <label>  Your Email (required)</label>
-                                        <input name="email" placeholder="Email *" type="email" required>
+                                        <input name="email" class="form-control" placeholder="Email *" type="email" required>
                                     </p>
                                 </div>
                                 <div class="col-md-6">
                                     <p>          
                                         <label>  Subject (required)</label>
-                                        <input name="subject" placeholder="Subject *" type="text" required>
+                                        <input name="subject" class="form-control" placeholder="Subject *" type="text" required>
                                     </p> 
                                 </div>
                                 <div class="col-md-6">
                                     <p>          
                                         <label>  Phone (required)</label>
-                                        <input name="phone" placeholder="phone *" type="number" min="1" required>
+                                        <input name="phone" class="form-control" placeholder="phone *" type="number" min="1" required>
                                     </p>  
                                 </div>
                             </div>
                         
                             <div class="contact_textarea">
                                 <label>  Your Message</label>
-                                <textarea placeholder="Message *" name="message" required  class="form-control2" ></textarea>     
+                                <textarea placeholder="Message *" class="form-control" name="message" required  class="form-control2" ></textarea>     
                             </div>   
                             <button class="btn btn-primary" type="submit"> Send</button>  
                         </form> 
@@ -460,7 +460,29 @@
 
 <!-- Main JS -->
 <script src="assets/js/main.js"></script>
-
+<script>
+    // $("form").on("submit",function(){
+    //     $("button").attr("disabled",true, 200)
+    // })
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 
 </body>
 

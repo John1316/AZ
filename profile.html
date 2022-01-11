@@ -287,187 +287,9 @@
 
 
     <!--section-->
-    <div class="section profileSection">
-        <div class="container">
-
-            <div class="profile profile_1">
-
-                
-                <div class="profile__body">
-                    <div class="row align-items-stretch no-gutters">
-                        
-                        <div class="col-lg-3">
-                            <div class="card border-right-2 h-100">
-                                <div class="card-body">
-                                    <div class="profile__img">
-                                        <img src="https://www.digitalbondmena.com/egec_new_new/backend/app-assets/images/profile/portraits/avatar-portrait-1.jpg" class="mb-3" alt="">
-                                    </div>
-                                    <div class="row no-gutters text-center ">
-                                
-                                        <div class="col-12 my-2">
-                                            <h6 class="mb-0">Full name</h6>
-                                            <p class="font-weight-bold">Mohamed khalifa</p>
-                                        </div>
-                                        <div class="col-12 my-2">
-                                            <h6 class="mb-0">Email Address</h6>
-                                            <p class="font-weight-bold">mohamed@yahoo.com</p>
-                                        </div>
-                                        <div class="col-12 my-2">
-                                            <h6 class="mb-0">Phone Number</h6>
-                                            <p class="font-weight-bold mb-0">011111111111</p>
-                                        </div>
-                                        
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="card">
-
-                                <ul class="nav nav-pills row " role="tablist" id="nav-tab">
-                                    <li  class="nav-item col-md-4 text-center">
-                                        <a class="active nav-link" data-toggle="tab" href="#pills-profile" role="tab" aria-controls="info" aria-selected="false">Profile</a>
-                                    </li>
-                                    <li class="nav-item col-md-4 text-center">
-                                        <a class="nav-link" data-toggle="tab" href="#pills-password" role="tab" aria-controls="sheet" aria-selected="false">Password</a>
-                                    </li>
-                                    <li class="nav-item col-md-4 text-center">
-                                        <a class="nav-link" data-toggle="tab" href="#pills-address" role="tab" aria-controls="sheet" aria-selected="false">Past addresses</a>
-                                    </li>
-                                    
-                                </ul>
-                                <div class="card-body">
-                                    <div class="row no-gutters">
-                                        <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                                <form action="">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="name">Name</label>
-                                                                <input id="name" class="form-control" type="text" name="name" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="email">Email</label>
-                                                                <input id="email" class="form-control" type="text" name="email" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="phone">Phone</label>
-                                                                <input id="phone" class="form-control" type="number" min="1"
-                                                                    name="phone" required>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="col-12">
-                                                            <button type="submit" class="btn btn-primary mt-2">Update profile</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="tab-pane fade " id="pills-password" role="tabpanel" aria-labelledby="pills-home-tab">
-                                                <form action="">
-                                                    <div class="row">
-                                                        
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label for="old_password">Old Password</label>
-                                                                <input id="old_password" class="form-control" type="text"
-                                                                    name="old_password" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label for="password">Password</label>
-                                                                <input id="password" class="form-control" type="text"
-                                                                    name="password" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label for="c_password">Confirm Password</label>
-                                                                <input id="c_password" class="form-control" type="text"
-                                                                    name="c_password" required>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <button type="submit" class="btn btn-primary mt-2">Change Password</button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="tab-pane fade " id="pills-address" role="tabpanel" aria-labelledby="pills-home-tab">
-                                                <form action="">
-                                                    <div class="row no-gutter my-3">
-                                                        <div class="col-12">
-                                                            <div class="card card-header-profile shadow-5 bg-primary">
-                                                                <div class="card-body">
-                                                                    <div class="d-flex no-gutters justify-content-between ">
-                                                                        <p class="mb-0">Your Addresses</p>
-                    
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="card shadow-5">
-                                                                <div class="card-body">
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group">
-                                                                                <label for="location">Location</label>
-                                                                                <select id="location" class="form-control" type="text" name="location" readonly="">
-                                                                                    <option value="">Cairo</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group">
-                                                                                <label for="address">Address</label>
-                                                                                <input id="address" class="form-control" type="text" value="address new" name="address" required="">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row justify-content-between mt-2">
-                                                                        <div class="col-md-3">
-                    
-                                                                            <button data-bs-toggle="modal" data-bs-target="#address_area13" class="btn btn-primary w-100">Update Address</button>
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                            <form method="POST" action="">                                                        
-                                                                            <button class="btn btn-primary w-100" type="submit">Remove Address</button>
-                                                                            </form>
-                                                                        </div>
-                    
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                            
- 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div> 
+    
     <!--//section-->
-    <section class="profileSection profile">
+    <section class="profileSection profile section-tb-padding">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-9">
@@ -483,13 +305,13 @@
                                 </div>
                             </div> 
                             <ul class="nav nav-pills row " role="tablist" id="nav-tab">
-                                <li  class="nav-item col-md-4 text-center">
+                                <li  class="nav-item col-md-4 text-center mb-3">
                                     <a class="active nav-link" data-toggle="tab" href="#pills-profile" role="tab" aria-controls="info" aria-selected="false">Profile</a>
                                 </li>
-                                <li class="nav-item col-md-4 text-center">
+                                <li class="nav-item col-md-4 text-center mb-3">
                                     <a class="nav-link" data-toggle="tab" href="#pills-password" role="tab" aria-controls="sheet" aria-selected="false">Password</a>
                                 </li>
-                                <li class="nav-item col-md-4 text-center">
+                                <li class="nav-item col-md-4 text-center mb-3">
                                     <a class="nav-link" data-toggle="tab" href="#pills-address" role="tab" aria-controls="sheet" aria-selected="false">Past addresses</a>
                                 </li>
                                 
@@ -560,7 +382,7 @@
                                         <div class="tab-pane fade " id="pills-address" role="tabpanel" aria-labelledby="pills-home-tab">
                                             <form action="">
                                                 <div class="row no-gutter my-3">
-                                                    <div class="col-12">
+                                                    <div class="col-12 mb-2">
                                                         <div class="card card-header-profile shadow-5 bg-primary">
                                                             <div class="card-body">
                                                                 <div class="d-flex no-gutters justify-content-between ">
@@ -569,8 +391,93 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    
+                                                        <div class="card shadow-5">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="location">Location</label>
+                                                                            <select id="location" class="form-control" type="text" name="location" readonly="">
+                                                                                <option value="">Cairo</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="address">Address</label>
+                                                                            <input id="address" class="form-control" type="text" value="address new" name="address" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row justify-content-between mt-2">
+                                                                    <div class="col-md-3">
+                
+                                                                        <button data-bs-toggle="modal" data-bs-target="#address_area13" class="btn btn-primary w-100">Update Address</button>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <form method="POST" action="">                                                        
+                                                                        <button class="btn btn-primary w-100" type="submit">Remove Address</button>
+                                                                        </form>
+                                                                    </div>
+                
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-12">
+                                                    <div class="col-12 mb-2">
+                                                        <div class="card card-header-profile shadow-5 bg-primary">
+                                                            <div class="card-body">
+                                                                <div class="d-flex no-gutters justify-content-between ">
+                                                                    <p class="mb-0">Your Addresses</p>
+                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <div class="card shadow-5">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="location">Location</label>
+                                                                            <select id="location" class="form-control" type="text" name="location" readonly="">
+                                                                                <option value="">Cairo</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="address">Address</label>
+                                                                            <input id="address" class="form-control" type="text" value="address new" name="address" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row justify-content-between mt-2">
+                                                                    <div class="col-md-3">
+                
+                                                                        <button data-bs-toggle="modal" data-bs-target="#address_area13" class="btn btn-primary w-100">Update Address</button>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <form method="POST" action="">                                                        
+                                                                        <button class="btn btn-primary w-100" type="submit">Remove Address</button>
+                                                                        </form>
+                                                                    </div>
+                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mb-2">
+                                                        <div class="card card-header-profile shadow-5 bg-primary">
+                                                            <div class="card-body">
+                                                                <div class="d-flex no-gutters justify-content-between ">
+                                                                    <p class="mb-0">Your Addresses</p>
+                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
                                                         <div class="card shadow-5">
                                                             <div class="card-body">
                                                                 <div class="row">

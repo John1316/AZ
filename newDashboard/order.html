@@ -55,8 +55,8 @@
                             </a>
                         </div>
 
-                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
-                            <i class="fa fa-fw fa-bars"></i>
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item toggle_menu waves-effect vertical-menu-btn">
+                            <i class="fa fa-fw fa-caret-square-left"></i>
                         </button>
 
                         
@@ -233,7 +233,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="order.html" class="waves-effect">
+                                <a href="products.html" class="waves-effect">
                                     <i class="uil-box"></i>
                                     <span>Products</span>
                                 </a>
@@ -446,12 +446,12 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <script>document.write(new Date().getFullYear())</script> © <img
-                                src="../assets/img/logo/DB+.png" alt="">.
+                                src="assets/images/logo/DB+.png" alt="">.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
-                                Crafted with <i class="mdi mdi-heart text-danger"></i> by <a
-                                    href="https://themesbrand.com/" target="_blank" class="text-reset">Themesbrand</a>
+                                Created by <i class="mdi mdi-heart text-danger"></i> by <a
+                                    href="http://digitalbondmena.com/" target="_blank" class="text-reset">Digital bond</a>
                             </div>
                         </div>
                     </div>
@@ -484,7 +484,18 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function(){
 
+if ($("body").hasClass("")) {
+    $('.toggle_menu i').addClass('la-arrow-alt-circle-right').removeClass("la-arrow-alt-circle-right")
+    console.log("no ay 7aga");
+}else if ($("body").hasClass("vertical-collpsed")){
+    $('.toggle_menu i').addClass('la-arrow-alt-circle-left').removeClass("la-arrow-alt-circle-left")
+    console.log("ay 8aga");
+}
+})
+    </script>
 </body>
 
 

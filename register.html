@@ -294,34 +294,34 @@
                 <!--register area start-->
                 <div class="col-lg-12">
                     <div class="account_form register">
-                        <form action="#" id="registerForm">
+                        <form action="#" id="registerForm" class="needs-validation" novalidate>
                             <div class="row justify-content-center">
                                 <div class="col-md-6">
-                                    <p>   
+                                    <div class="form-group">   
                                         <label>Full Name <span>*</span></label>
-                                        <input type="text" class="form-control">
-                                    </p>
+                                        <input type="text" class="form-control" required>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
 
-                                    <p>   
+                                    <div class="form-group">   
                                         <label>Email<span>*</span></label>
-                                        <input type="email" class="form-control">
-                                    </p>
+                                        <input type="email" class="form-control" required>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>   
+                                    <div class="form-group">   
                                         <label>Location<span>*</span></label>
-                                        <select id="location" name="location" class="form-control">
+                                        <select id="location" name="location" class="form-control" required>
                                             <option value="">Choose your location</option>
                                             <option value="29">Mohandsien</option>
                                             <option value="30">Heliopolis</option>
                                             <option value="31">El Sheikh Zayed</option>
                                         </select>
-                                    </p>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>   
+                                    <div class="form-group">   
                                         <label>Sub Location<span>*</span></label>
                                         <select name="sub_location_id" id="sub_location_id" class="form-control" required="">
                           
@@ -360,33 +360,33 @@
                                             <option value="389">Al Wekala</option>
                                             <option value="390">Elremaya</option>
                                         </select>
-                                    </p>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>
+                                    <div class="form-group">
                                         <label>Address <span>*</span></label>
-                                        <input type="text" class="form-control">
-                                    </p>
+                                        <input type="text" class="form-control" required>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <p>
+                                    <div class="form-group">
                                         <label>Phone <span>*</span></label>
-                                        <input type="number" min="1" class="form-control">
-                                    </p>
+                                        <input type="number" min="1" class="form-control" required>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
 
-                                    <p>   
+                                    <div class="form-group">   
                                         <label>Password <span>*</span></label>
-                                        <input type="password" class="form-control">
-                                    </p>
+                                        <input type="password" class="form-control" required>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
 
-                                    <p>   
+                                    <div class="form-group">   
                                         <label>Confirm Password <span>*</span></label>
-                                        <input type="password" class="form-control">
-                                    </p>
+                                        <input type="password" class="form-control" required>
+                                    </div>
                                 </div>
                                 <div class="login_submit col-lg-6 col-md-8">
                                     <button type="submit" class="w-100 m-0">Register</button>
@@ -497,7 +497,29 @@
 <!-- Main JS -->
 <script src="assets/js/main.js"></script>
 
-
+<script>
+    // $("form").on("submit",function(){
+    //     $("button").attr("disabled",true, 200)
+    // })
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 </body>
 
 
