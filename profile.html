@@ -295,8 +295,8 @@
                 <div class="col-md-9">
                     <div class="card p-3 py-4">
                         <div class="text-center"> <img src="https://www.digitalbondmena.com/egec_new_new/backend/app-assets/images/profile/portraits/avatar-portrait-1.jpg" width="100" class="rounded-circle profile_img"> </div>
-                        <div class="text-center mt-3">
-                            <div class="mb-3">
+                        <div class=" mt-3">
+                            <div class="mb-3 text-center">
 
                                 <h5 class="mt-2 mb-0">Alexender Schidmt</h5> 
                                 <span>mohamed@yahoo.com</span>
@@ -380,7 +380,6 @@
                                             </form>
                                         </div>
                                         <div class="tab-pane fade " id="pills-address" role="tabpanel" aria-labelledby="pills-home-tab">
-                                            <form action="">
                                                 <div class="row no-gutter my-3">
                                                     <div class="col-12 mb-2">
                                                         <div class="card card-header-profile shadow-5 bg-primary">
@@ -413,7 +412,7 @@
                                                                 <div class="row justify-content-between mt-2">
                                                                     <div class="col-md-3">
                 
-                                                                        <button data-bs-toggle="modal" data-bs-target="#address_area13" class="btn btn-primary w-100">Update Address</button>
+                                                                        <button data-bs-toggle="modal" data-bs-target="#updateProfileBuilding" type="button" class="btn btn-primary w-100">Update Address</button>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <form method="POST" action="">                                                        
@@ -456,7 +455,7 @@
                                                                 <div class="row justify-content-between mt-2">
                                                                     <div class="col-md-3">
                 
-                                                                        <button data-bs-toggle="modal" data-bs-target="#address_area13" class="btn btn-primary w-100">Update Address</button>
+                                                                        <button data-bs-toggle="modal" data-bs-target="#updateProfileVilla" class="btn btn-primary w-100">Update Address</button>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <form method="POST" action="">                                                        
@@ -499,7 +498,7 @@
                                                                 <div class="row justify-content-between mt-2">
                                                                     <div class="col-md-3">
                 
-                                                                        <button data-bs-toggle="modal" data-bs-target="#address_area13" class="btn btn-primary w-100">Update Address</button>
+                                                                        <button data-bs-toggle="modal" data-bs-target="#updateProfileOther" class="btn btn-primary w-100">Update Address</button>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <form method="POST" action="">                                                        
@@ -512,7 +511,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </form>
                                         </div>
                                         
                                     </div>
@@ -587,6 +585,122 @@
     </footer>
     <!--footer area end-->
 
+    <!-- Villa -->
+    <div id="updateProfileVilla" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="" method="post">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input id="address" class="form-control" type="text" name="address">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="building_number">Building Number</label>
+                                    <input id="building_number" class="form-control" type="text" name="building_number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="landmark">Landmark</label>
+                                    <input id="landmark" class="form-control" type="text" name="landmark">
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary">Update address</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buildings -->
+
+    <div id="updateProfileBulding" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="" method="post">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input id="address" class="form-control" type="text" name="address">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="building_number">Building Number</label>
+                                    <input id="building_number" class="form-control" type="text" name="building_number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="floor_number">Floor Number</label>
+                                    <input id="floor_number" class="form-control" type="text" name="floor_number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="apartment_number">Apartment Number</label>
+                                    <input id="apartment_number" class="form-control" type="text" name="apartment_number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="landmark">Landmark</label>
+                                    <input id="landmark" class="form-control" type="text" name="landmark">
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary">Update address</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- other -->
+
+    <div id="updateProfileOther" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="" method="post">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input id="address" class="form-control" type="text" name="address">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="landmark">Landmark</label>
+                                    <input id="landmark" class="form-control" type="text" name="landmark">
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary">Update address</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JS
 ============================================ -->
     <!--jquery min js-->

@@ -15,7 +15,14 @@
     }
     var s;
 
+    $(document).ready(function(){
 
+
+                $(".vertical-menu-btn").click(function(){
+                    $(".toggle_menu i").toggleClass("fa-caret-square-left fa-caret-square-right")
+                })
+                
+            })
     a("#side-menu").metisMenu(), a(".vertical-menu-btn").on("click", function (e) {
             e.preventDefault(), a("body").toggleClass("sidebar-enable"), 992 <= a(window).width() ? a("body").toggleClass("vertical-collpsed") : a("body").removeClass("vertical-collpsed")
         }), a("#sidebar-menu a").each(function () {
