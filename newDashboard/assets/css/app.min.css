@@ -642,11 +642,11 @@ body[data-layout=horizontal] .footer {
     }
 }
 
-@media (min-width:769px) {
+/* @media (min-width:769px) {
     .vertical-collpsed {
         min-height: 1450px
     }
-}
+} */
 
 .vertical-collpsed .main-content {
     margin-left: 70px
