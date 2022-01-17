@@ -16,8 +16,11 @@
     $(window).on('load', function () {
         dataBackgroundImage();
     });
-    
-    /*---stickey menu---*/
+    $(document).ready( function() {
+        $("#loader").delay(1000).fadeOut(500 , function(){
+            $("body").css("overflow","auto")
+        });
+    })    /*---stickey menu---*/
     $(window).on('scroll',function() {    
            var scroll = $(window).scrollTop();
            if (scroll < 100) {
